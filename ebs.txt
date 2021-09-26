@@ -1,0 +1,9 @@
+$ lsblk
+xvda    202:0    0   9G  0 disk
+└─xvda1 202:1    0   8G  0 part /
+$ sudo growpart /dev/xvda 1
+CHANGED: partition=1 start=4096 old: size=16773087 end=16777183 new: size=18870239 end=18874335
+$ lsblk
+NAME    MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+xvda    202:0    0   9G  0 disk
+└─xvda1 202:1    0   9G  0 part /
